@@ -1,0 +1,123 @@
+<!-- #Events:
+	Event is an action that happens in the browser
+e.g clicking a button , moving mouse, pressing key, submitting form, loading page
+js can detect this event and respond to them
+
+Types of Events:
+1]Mouse Event: click,dblclick,mouseover,mouseout
+2]keyboard Event: keydown,keyup
+3]Browser Event:load,resize,scroll
+ -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>JavaScript Events Demo</title>
+
+    <style>
+        body {
+            background-color: #414141;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            margin: 15px;
+        }
+
+        img {
+            width: 200px;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        img:hover {
+            transform: scale(1.05);
+        }
+
+        a {
+            color: lightblue;
+            font-size: 18px;
+        }
+    </style>
+</head>
+<body>
+
+    <h2>Amazing Images (Click to Remove)</h2>
+
+    <ul id="images">
+        <li>
+            <img id="photoshop"
+                src="https://upload.wikimedia.org/wikipedia/commons/a/af/Adobe_Photoshop_CC_icon.svg"
+                onclick="alert('Hi')" #this not good way,hard to maintain, html should contain structure , js contains logic , mixing both is bad practice 
+                alt="Photoshop Logo">
+        </li>
+
+        <li>
+            <img id="japan"
+                src="https://images.unsplash.com/photo-1501785888041-af3ef285b470"
+                onclick="alert('Hi')"
+                alt="Mount Fuji">
+        </li>
+
+        <li>
+            <img id="Nature"
+                src="https://images.unsplash.com/photo-1549880338-65ddcdfd017b"
+                alt="Nature Image">
+        </li>
+
+        <li>
+            <img id="photoman"
+                src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee"
+                alt="Photographer">
+        </li>
+
+        <li>
+            <img id="tiger"
+                src="https://images.unsplash.com/photo-1546182990-dffeafbe841d"
+                alt="Tiger">
+        </li>
+
+        <li>
+            <a href="https://google.com" id="google">Visit Google</a>
+        </li>
+    </ul>
+  </body>
+  <script>
+    document.getElementById('japan').onclick = function(){
+        alert('hello japan');
+    }
+    document.getElementById('tiger').addEventListener('click') ,function(e){
+        console.log(e)
+// H.W- Use of J Query , type , timestamp ,default prevented, target, source element, current tag,clientx,clienty,screenx,screeny,altkey,controlkey,shiftkey
+    }
+    document.addEventListener('click') ,function(e){
+        console.log("Clicking inside ")
+    }
+    document.getElementsByClassName('google').addEventListener('click'),function(e){
+        console.log("Google Clciked")
+        e.preventDefault()
+    }
+
+    
+  </script>
+  </html>
+
+  <!-- Select element 
+  Assign function to click eventwhen click 
+  when click function runs -->
+
+
+  <!-- addEventListener is js method used to attach an event-handler to an html elements 
+  so thatb specific function run when event occurs -->
+
+ 
