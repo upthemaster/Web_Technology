@@ -1,0 +1,74 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Base */
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Segoe UI', sans-serif;
+    transition: background 0.4s ease, color 0.4s ease;
+}
+
+/* DARK MODE */
+body.dark {
+    background: linear-gradient(135deg, #141e30, #243b55);
+    color: white;
+}
+
+/* LIGHT MODE */
+body.light {
+    background: linear-gradient(135deg, #f5f7fa, #c3cfe2);
+    color: #222;
+}
+
+/* Wrapper */
+.clock-wrapper {
+    text-align: center;
+}
+
+/* Clock Style */
+.clock {
+    font-size: 60px;
+    margin: 20px 0;
+    padding: 20px 40px;
+    border-radius: 15px;
+    letter-spacing: 4px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Smooth animation class */
+.animate {
+    transform: scale(1.05);
+    opacity: 0.8;
+}
+
+/* Button */
+button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+body.dark button {
+    background: white;
+    color: black;
+}
+
+body.light button {
+    background: #222;
+    color: white;
+}
+
+button:hover {
+    transform: scale(1.05);
+}
