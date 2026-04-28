@@ -1,0 +1,53 @@
+.header {
+  padding: var(--space-md) var(--space-lg);
+  background: transparent;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.icon-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  color: var(--primary);
+  width: 44px;
+  height: 44px;
+  border-radius: var(--radius-pill);
+  transition: background var(--transition-fast), transform var(--transition-fast);
+}
+
+.icon-btn:hover {
+  background: var(--card-bg);
+  transform: scale(1.05);
+}
+
+.icon-btn span {
+  font-size: 28px;
+  transition: color var(--transition-fast);
+}
+
+.active-sun {
+  color: var(--weather-sun);
+}
+
+.neon-title {
+  font-size: clamp(56px, 6vw, 72px);
+  font-weight: 700;
+  text-align: center;
+  margin: 0;
+
+  /* Gradient Setup */
+  background: linear-gradient(to right, #ff4dff, #00eaff);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+
+  /* Soft Ambient Glow (Lower Brightness) */
+  text-shadow: 
+    0 0 4px rgba(255,255,255,0.1),
+    0 0 12px rgba(255,77,255,0.2),
+    0 0 24px rgba(0,234,255,0.25);
+}

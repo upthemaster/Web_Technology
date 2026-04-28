@@ -1,0 +1,17 @@
+.hourly-forecast {
+  display: flex;
+  justify-content: space-between;
+  padding: var(--space-md) var(--space-xl) var(--space-lg);
+  border-top: 1px solid var(--border-color);
+  margin-top: var(--space-md);
+}
+
+.forecast-item {
+  flex-direction: column;
+  gap: var(--space-sm);
+}
+
+.hour-icon {
+  font-size: 28px;
+  font-variation-settings: 'FILL' 1;
+}

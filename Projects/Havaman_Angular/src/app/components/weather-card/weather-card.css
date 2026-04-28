@@ -1,0 +1,62 @@
+.weather-card-container {
+  padding: 0 var(--space-lg);
+  margin-bottom: var(--space-lg);
+}
+
+.weather-card {
+  background: var(--primary-light);
+  color: var(--text-primary);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-xl);
+  overflow: hidden;
+  position: relative;
+}
+
+body.dark-theme .weather-card {
+  background: var(--card-bg);
+}
+
+.header-row {
+  align-items: flex-start;
+}
+
+.location-info h2 {
+  max-width: 150px;
+  line-height: 1.1;
+  margin-bottom: var(--space-xs);
+}
+
+.location-badge {
+  background: var(--card-bg);
+  padding: var(--space-xs) var(--space-sm);
+  gap: 4px;
+  box-shadow: var(--shadow-sm);
+}
+
+body.dark-theme .location-badge {
+  background: var(--primary-light);
+}
+
+.weather-main {
+  align-items: flex-end;
+}
+
+.weather-icon-huge {
+  font-size: 100px;
+}
+
+.weather-icon-huge span {
+  font-size: 100px;
+  font-variation-settings: 'FILL' 1;
+}
+
+.temp-info {
+  display: flex;
+  flex-direction: column;
+}
+
+.temp-info h1 {
+  line-height: 0.9;
+  letter-spacing: -2px;
+}

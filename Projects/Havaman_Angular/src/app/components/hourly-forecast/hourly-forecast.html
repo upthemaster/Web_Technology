@@ -1,0 +1,7 @@
+<div class="hourly-forecast">
+  <div class="forecast-item flex-center" *ngFor="let hour of hourly()">
+    <span class="text-sm text-muted">{{ hour.time }}</span>
+    <span class="material-symbols-rounded hour-icon" [style.color]="hour.color">{{ hour.icon }}</span>
+    <span class="font-medium">{{ hour.temp }}&deg;</span>
+  </div>
+</div>

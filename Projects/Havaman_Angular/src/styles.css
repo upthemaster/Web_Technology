@@ -1,0 +1,137 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'leaflet/dist/leaflet.css';
+
+:root {
+  /* Dimensions & Spacing */
+  --space-xs: 0.25rem;
+  --space-sm: 0.5rem;
+  --space-md: 1rem;
+  --space-lg: 1.5rem;
+  --space-xl: 2rem;
+  --space-xxl: 3rem;
+  
+  --radius-sm: 8px;
+  --radius-md: 16px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 9999px;
+
+  /* Typography */
+  --font-main: 'Inter', sans-serif;
+  
+  /* Transitions */
+  --transition-fast: 0.2s ease;
+  --transition-normal: 0.3s ease;
+
+  /* LIGHT THEME VARIABLES */
+  --bg-color: #f7f9fc;
+  --card-bg: #ffffff;
+  --card-bg-frost: rgba(255, 255, 255, 0.7);
+  --text-primary: #1e293b;
+  --text-secondary: #64748b;
+  --text-muted: #94a3b8;
+  
+  --primary: #3b82f6; /* Blue */
+  --primary-light: #dbeafe;
+  --primary-dark: #2563eb;
+  
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.05);
+  --shadow-normal: 0 8px 24px rgba(148, 163, 184, 0.15);
+  --shadow-hover: 0 12px 32px rgba(148, 163, 184, 0.2);
+  
+  --border-color: #e2e8f0;
+  
+  --weather-sun: #f59e0b; /* Amber */
+  --weather-cloud: #60a5fa; /* Blue */
+  --weather-rain: #3b82f6; /* Rain */
+}
+
+/* Dark Theme Toggle Class */
+body.dark-theme {
+  --bg-color: #0f172a;
+  --card-bg: #1e293b;
+  --card-bg-frost: rgba(30, 41, 59, 0.7);
+  --text-primary: #f8fafc;
+  --text-secondary: #cbd5e1;
+  --text-muted: #64748b;
+  
+  --primary: #3b82f6;
+  --primary-light: #1e3a8a;
+  
+  --shadow-sm: 0 2px 4px rgba(0,0,0,0.3);
+  --shadow-normal: 0 8px 24px rgba(0,0,0,0.4);
+  --shadow-hover: 0 12px 32px rgba(0,0,0,0.5);
+  
+  --border-color: #334155;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-color);
+  color: var(--text-primary);
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Typography Base */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+p {
+  line-height: 1.5;
+}
+
+/* Material Symbols Config */
+.material-symbols-rounded {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24;
+}
+
+/* Global utility classes */
+.card {
+  background: var(--card-bg);
+  border-radius: var(--radius-xl);
+  padding: var(--space-lg);
+  box-shadow: var(--shadow-normal);
+  transition: box-shadow var(--transition-normal), transform var(--transition-normal), background var(--transition-normal);
+}
+
+.pill {
+  border-radius: var(--radius-pill);
+}
+
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-between {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text-sm { font-size: 0.875rem; }
+.text-md { font-size: 1rem; }
+.text-lg { font-size: 1.125rem; }
+.text-xl { font-size: 1.5rem; }
+.text-2xl { font-size: 2rem; }
+.text-4xl { font-size: 2.25rem; }
+.text-6xl { font-size: 4rem; }
+
+.font-bold { font-weight: 700; }
+.font-medium { font-weight: 500; }
+.font-light { font-weight: 300; }

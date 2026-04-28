@@ -1,0 +1,28 @@
+.search-container {
+  padding: var(--space-md) var(--space-lg);
+}
+
+.search-box {
+  padding: var(--space-sm) var(--space-md) var(--space-sm) var(--space-lg);
+  display: flex;
+  box-shadow: var(--shadow-sm);
+}
+
+.search-icon {
+  color: var(--text-muted);
+  margin-right: var(--space-sm);
+}
+
+.search-input {
+  border: none;
+  background: transparent;
+  width: 100%;
+  font-size: var(--text-md);
+  color: var(--text-primary);
+  font-family: inherit;
+  outline: none;
+}
+
+.search-input::placeholder {
+  color: var(--text-muted);
+}

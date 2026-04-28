@@ -1,0 +1,78 @@
+.app-layout {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.main-content {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.mobile-wrapper {
+  width: 100%;
+  max-width: 650px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.search-section {
+  width: 100%;
+  margin-bottom: var(--space-md);
+}
+
+.content-columns {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.column-left, .column-right {
+  display: flex;
+  flex-direction: column;
+}
+
+/* Grouping weather details and hourly forecast in a single card container */
+.wrapper-card {
+  margin: 0 var(--space-lg) var(--space-lg);
+  padding: 0;
+  overflow: hidden;
+}
+
+/* Desktop layout optimizations */
+@media (min-width: 1024px) {
+  .mobile-wrapper {
+    max-width: 1200px;
+    padding: var(--space-xl) var(--space-xl) 0;
+  }
+
+  .content-columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas: 
+      "current daily"
+      "details alert"
+      "radar radar";
+    gap: var(--space-lg);
+    align-items: stretch; /* Forces equal height matching */
+  }
+
+  .grid-current { grid-area: current; }
+  .grid-daily { grid-area: daily; }
+  .grid-details { grid-area: details; }
+  .grid-alert { grid-area: alert; }
+  .grid-radar { grid-area: radar; }
+
+  /* Wipe internal component margins in desktop */
+  .grid-current > *, .grid-daily > *, .grid-details > *, .grid-alert > *, .grid-radar > * {
+    margin: 0 !important;
+    height: 100%;
+  }
+
+  /* Hide bottom nav on desktop, assume header handles navigation */
+  app-bottom-nav {
+    display: none;
+  }
+}

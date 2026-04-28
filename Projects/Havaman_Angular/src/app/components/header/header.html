@@ -1,0 +1,11 @@
+<header class="header flex-between">
+  <div style="width: 44px;"></div>
+  
+  <h1 class="neon-title">HavaMan&deg;</h1>
+  
+  <button class="icon-btn flex-center" aria-label="Toggle Theme" (click)="themeService.toggleTheme()">
+    <span class="material-symbols-rounded" [class.active-sun]="!themeService.isDark()">
+      {{ themeService.isDark() ? 'dark_mode' : 'light_mode' }}
+    </span>
+  </button>
+</header>

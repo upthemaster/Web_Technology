@@ -1,0 +1,19 @@
+<div class="radar-container">
+  <div class="card radar-card map-wrapper">
+    <!-- The leaflet map will attach here -->
+    <div id="radarMap" style="width: 100%; height: 100%; border-radius: inherit; z-index: 1;"></div>
+    
+    <div class="map-overlay" style="z-index: 2; pointer-events: none;">
+      <div class="map-label card" style="pointer-events: auto;">
+        <h3 class="font-medium">Weather Radar</h3>
+        <p class="text-xs text-muted text-uppercase">Real-time air flow</p>
+      </div>
+      
+      <div class="map-controls" style="pointer-events: auto;">
+        <button class="layer-btn flex-center card" (click)="toggleMapType()">
+          <span class="material-symbols-rounded">layers</span>
+        </button>
+      </div>
+    </div>
+  </div>
+</div>

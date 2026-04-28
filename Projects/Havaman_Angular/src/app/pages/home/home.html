@@ -1,0 +1,29 @@
+<div class="app-layout">
+  <app-header></app-header>
+  
+  <main class="main-content">
+    <div class="mobile-wrapper">
+      <div class="search-section">
+        <app-search-bar></app-search-bar>
+      </div>
+
+      <div class="content-columns">
+        <app-weather-card class="grid-current"></app-weather-card>
+        <app-daily-forecast class="grid-daily"></app-daily-forecast>
+        
+        <div class="card wrapper-card grid-details">
+          <app-weather-details></app-weather-details>
+          <app-hourly-forecast></app-hourly-forecast>
+        </div>
+        
+        <div class="grid-alert">
+          <app-alert-banner></app-alert-banner>
+        </div>
+        
+        <app-radar class="grid-radar"></app-radar>
+      </div>
+    </div>
+  </main>
+  
+  <app-bottom-nav></app-bottom-nav>
+</div>

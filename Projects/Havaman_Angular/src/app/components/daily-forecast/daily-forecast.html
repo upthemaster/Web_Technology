@@ -1,0 +1,20 @@
+<div class="card daily-forecast-card">
+  <div class="flex-between header-row">
+    <h3 class="text-md font-medium">5-Day Forecast</h3>
+    <a href="javascript:void(0)" class="text-xs font-bold primary-link">FULL DETAILS</a>
+  </div>
+  
+  <div class="forecast-list">
+    <div class="daily-item flex-between" *ngFor="let day of daily()">
+      <span class="day text-sm">{{ day.day }}</span>
+      <div class="condition flex-center">
+        <span class="material-symbols-rounded" [style.color]="day.color">{{ day.icon }}</span>
+        <span class="text-sm text-muted condition-text">{{ day.condition }}</span>
+      </div>
+      <div class="temps">
+        <span class="font-medium">{{ day.high }}&deg;</span>
+        <span class="text-muted temp-low">{{ day.low }}&deg;</span>
+      </div>
+    </div>
+  </div>
+</div>

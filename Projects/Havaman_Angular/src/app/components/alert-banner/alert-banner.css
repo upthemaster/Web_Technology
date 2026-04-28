@@ -1,0 +1,32 @@
+.alert-container {
+  margin: 0 var(--space-md) var(--space-md);
+}
+
+.alert-banner {
+  background: var(--primary-light);
+  padding: var(--space-sm) var(--space-md) var(--space-sm) var(--space-sm);
+  color: var(--primary-dark);
+  gap: var(--space-md);
+  justify-content: flex-start;
+}
+
+body.dark-theme .alert-banner {
+  color: var(--primary-light);
+  background: var(--card-bg);
+}
+
+.icon-circle {
+  background: var(--primary-dark);
+  color: white;
+  width: 28px;
+  height: 28px;
+  border-radius: var(--radius-pill);
+}
+
+body.dark-theme .icon-circle {
+  background: var(--primary);
+}
+
+.icon-circle span {
+  font-size: 16px;
+}

@@ -1,0 +1,24 @@
+<div class="weather-card-container">
+  <div class="card weather-card">
+    <div class="flex-between header-row">
+      <div class="location-info">
+        <h2 class="text-4xl">{{ weather().city }}</h2>
+        <p class="text-secondary text-sm">{{ weather().date }}</p>
+      </div>
+      <div class="location-badge pill flex-center text-sm font-medium" style="cursor: pointer;" (click)="weatherService.initLocation()">
+        <span class="material-symbols-rounded text-sm">location_on</span>
+        <span>CURRENT LOCATION</span>
+      </div>
+    </div>
+    
+    <div class="weather-main flex-between">
+      <div class="weather-icon-huge flex-center" [style.color]="weather().color">
+        <span class="material-symbols-rounded">{{ weather().icon }}</span>
+      </div>
+      <div class="temp-info text-right">
+        <h1 class="text-6xl font-light">{{ weather().temperature }}&deg;</h1>
+        <p class="text-xl">{{ weather().condition }}</p>
+      </div>
+    </div>
+  </div>
+</div>

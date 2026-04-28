@@ -1,0 +1,6 @@
+<div class="search-container">
+  <div class="search-box card pill flex-center">
+    <span class="material-symbols-rounded search-icon" style="cursor: pointer;" (click)="onSearch(searchInput.value)">search</span>
+    <input #searchInput type="text" placeholder="Search city or zip code..." class="search-input" (keyup.enter)="onSearch(searchInput.value)" />
+  </div>
+</div>

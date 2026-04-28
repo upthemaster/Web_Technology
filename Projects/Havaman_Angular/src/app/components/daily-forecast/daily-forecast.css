@@ -1,0 +1,58 @@
+.daily-forecast-card {
+  margin: var(--space-md);
+}
+
+.header-row {
+  margin-bottom: var(--space-lg);
+}
+
+.primary-link {
+  color: var(--primary);
+  text-decoration: none;
+  letter-spacing: 0.5px;
+}
+
+.primary-link:hover {
+  text-decoration: underline;
+}
+
+.forecast-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-lg);
+}
+
+.daily-item {
+  width: 100%;
+}
+
+.day {
+  width: 40px;
+}
+
+.condition {
+  flex: 1;
+  justify-content: flex-start;
+  gap: var(--space-sm);
+  padding-left: var(--space-lg);
+}
+
+.condition-text {
+  min-width: 60px;
+}
+
+.temps {
+  display: flex;
+  gap: var(--space-md);
+  width: 70px;
+  justify-content: flex-end;
+}
+
+.temp-low {
+  width: 30px;
+  text-align: right;
+}
+
+.daily-item .material-symbols-rounded {
+  font-variation-settings: 'FILL' 1;
+}

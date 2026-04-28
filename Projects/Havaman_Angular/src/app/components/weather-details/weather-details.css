@@ -1,0 +1,49 @@
+.details-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  row-gap: var(--space-xl);
+  column-gap: var(--space-md);
+  padding: var(--space-xl) var(--space-lg);
+}
+
+.detail-item {
+  display: flex;
+  align-items: center; /* Center vertically against the tight text block */
+  gap: var(--space-md); /* Consistent gap between icon and text */
+}
+
+.detail-icon {
+  color: var(--primary);
+  font-size: 28px;
+  line-height: 1; /* prevent icon from misaligning vertically */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 32px; /* Fixed width so texts always align on the same column line regardless of icon width */
+}
+
+.detail-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 4px; /* tight, explicit gap between label and value */
+}
+
+.label {
+  font-size: 0.75rem;
+  letter-spacing: 0.5px;
+  line-height: 1;
+}
+
+.value {
+  font-size: var(--text-md);
+  line-height: 1;
+}
+
+/* Responsiveness adjustments for wider screens without breaking grid */
+@media (max-width: 360px) {
+  .details-grid {
+    grid-template-columns: 1fr; /* Switch to a list on extremely narrow devices */
+    row-gap: var(--space-md);
+  }
+}

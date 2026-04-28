@@ -1,0 +1,8 @@
+<div class="alert-container" *ngIf="alert().isActive">
+  <div class="alert-banner pill flex-center">
+    <div class="icon-circle flex-center">
+      <span class="material-symbols-rounded">info</span>
+    </div>
+    <p class="text-sm">{{ alert().message }}</p>
+  </div>
+</div>
