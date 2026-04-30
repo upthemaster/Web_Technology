@@ -1,0 +1,48 @@
+Title: Express Basics
+
+1. Express:
+Express is a web framework for Node.js used to build web applications and APIs.
+
+2. package.json vs package-lock.json:
+
+package.json:
+- Contains project details
+- Lists dependencies
+- Used to install packages
+
+package-lock.json:
+- Stores exact version of dependencies
+- Ensures same setup on every system
+
+3. Dependencies vs Dev Dependencies:
+
+Dependencies:
+- Required for running application
+- Example: express
+
+Dev Dependencies:
+- Required only during development
+- Example: nodemon
+
+4. Routes:
+Routes define how application responds to client requests.
+
+Example:
+app.get("/", (req, res) => {})
+
+5. HTTP Methods:
+
+GET:
+Used to fetch data
+
+POST:
+Used to send/create data
+
+PUT:
+Used to update data
+
+DELETE:
+Used to delete data
+
+6. Express Workflow:
+Client → Request → Server → Route → Response → Client

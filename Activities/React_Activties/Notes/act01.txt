@@ -1,0 +1,41 @@
+Title: Types of Components in React
+
+1. Component:
+A component is a reusable piece of UI in React.
+
+2. Types of Components:
+
+a. Functional Component:
+- Simple JavaScript function
+- Uses hooks for state
+- Easy to write
+
+Example:
+function Demo() {
+  return <h1>Hello</h1>;
+}
+
+b. Class Component:
+- Uses class keyword
+- Uses render() method
+- Can manage state
+
+Example:
+class Demo extends React.Component {
+  render() {
+    return <h1>Hello</h1>;
+  }
+}
+
+3. Difference:
+
+Functional:
+- Simple
+- Uses hooks
+
+Class:
+- Complex
+- Uses lifecycle methods
+
+4. Real-life Example:
+Navbar, Login Form, Dashboard → all are components

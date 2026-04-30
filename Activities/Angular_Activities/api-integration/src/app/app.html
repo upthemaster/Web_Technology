@@ -1,0 +1,21 @@
+<div class="container">
+  <h1>Activity 4: API Integration</h1>
+  <p>Fetching data from JSONPlaceholder API</p>
+
+  <!-- Loading Spinner -->
+  <div *ngIf="isLoading" class="spinner-container">
+    <div class="spinner"></div>
+    <p>Loading users...</p>
+  </div>
+
+  <!-- User List -->
+  <div *ngIf="!isLoading" class="user-grid">
+    <div *ngFor="let user of users" class="user-card">
+      <h3>{{ user.name }}</h3>
+      <p>📧 {{ user.email }}</p>
+      <p>🏢 {{ user.company.name }}</p>
+    </div>
+  </div>
+
+  <button *ngIf="!isLoading" (click)="fetchUsers()" class="refresh-btn">Refresh List</button>
+</div>

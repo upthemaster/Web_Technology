@@ -1,0 +1,65 @@
+Title: Query Parameters
+
+1. Query Parameters:
+Query parameters are values passed in the URL after '?' symbol.
+
+Example:
+http://localhost:3000/user?name=Pranali&age=20
+
+2. Structure:
+?key=value&key=value
+
+3. How to access:
+Using req.query object in Express.
+
+Example:
+req.query.name
+
+4. Features:
+- Used to send optional data
+- No need to define in route
+- Flexible and dynamic
+
+5. Examples:
+
+Example 1:
+URL: /user?name=Pranali
+Output: Name: Pranali
+
+Example 2:
+URL: /product?name=Laptop&price=50000
+
+Example 3:
+URL: /search?category=books&limit=5
+
+6. Real-life Use:
+
+- Search filters in websites
+  Example:
+  Amazon search → ?category=electronics
+
+- Pagination
+  Example:
+  ?page=2&limit=10
+
+- Sorting data
+  Example:
+  ?sort=price
+
+- Filtering results
+  Example:
+  ?brand=apple
+
+7. Difference from Route Params:
+
+Query Params:
+- Optional
+- Used for filtering/search
+
+Route Params:
+- Mandatory
+- Part of URL path
+
+Example:
+Route Param → /user/101
+Query Param → /user?id=101

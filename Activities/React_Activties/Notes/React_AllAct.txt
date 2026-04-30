@@ -1,0 +1,67 @@
+REACT ACTIVITIES - CONCEPTUAL GUIDE
+
+1. ACTIVITY: UNDERSTAND TYPES OF COMPONENTS
+*******************************************
+In React, there are two main types of components:
+
+A. Functional Components:
+- These are simple JavaScript functions that return JSX.
+- They are the modern way of writing React components.
+- Since the introduction of Hooks, functional components can handle state and lifecycle methods.
+Example:
+function Welcome() {
+    return <h1>Hello React!</h1>;
+}
+
+B. Class Components:
+- These are ES6 classes that extend 'React.Component'.
+- They must have a 'render()' method that returns JSX.
+- Historically used for state and lifecycle, but now mostly replaced by functional components.
+Example:
+class Welcome extends React.Component {
+    render() {
+        return <h1>Hello from Class Component!</h1>;
+    }
+}
+
+2. ACTIVITY: UNDERSTAND PROPS
+*****************************
+- 'Props' stands for Properties.
+- They are used to pass data from a parent component to a child component.
+- Props are read-only (immutable) within the child component.
+- They work like arguments in a function.
+Example:
+Parent: <User name="Aayan" />
+Child: function User(props) { return <h1>Hello, {props.name}</h1>; }
+
+3. ACTIVITY: UNDERSTAND STATE CONCEPT
+*************************************
+- 'State' is a built-in object used to store data that changes over time within a component.
+- Unlike props, state is private and fully controlled by the component.
+- When state changes, React re-renders the component.
+
+Example 1: Counter App (Numeric state)
+- Clicking a button increases the count.
+Example 2: Toggle Visibility (Boolean state)
+- Clicking a button shows/hides a message.
+
+4. ACTIVITY: UNDERSTAND HOOKS CONCEPT
+*************************************
+- Hooks were introduced in React 16.8.
+- They allow functional components to use state and other React features without writing a class.
+- Common Hooks:
+  - useState: Manages state in functional components.
+  - useEffect: Handles side effects like data fetching, subscriptions, or manual DOM changes.
+  - useContext: Shares data across components without prop drilling.
+
+Rules of Hooks:
+- Must only be called at the top level (not inside loops or conditions).
+- Must only be called from React functional components.
+
+5. VIDEO ACTIVITIES IMPLEMENTATION
+**********************************
+Following the provided video tutorials, the code in 'react-activities-demo' implements:
+- Functional vs Class Component display.
+- Passing and receiving Props.
+- Counter and Toggle state management.
+- useState and useEffect hook examples.

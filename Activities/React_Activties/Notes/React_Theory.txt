@@ -1,0 +1,84 @@
+React is an Javascript Library developed by Meta., To build an fast and interactive interface .Its an SPA like Single Page Application.
+
+ACTIVITY :
+        React vs Angular
+
+***************************
+why do we use react :
+because in js:->
+        - without react full page reload 
+        - complex DOM Manipulation 
+        - hard to manage large app
+************************
+with react :
+-updates only react part 
+- uses reusable component .
+
+ ************************
+ SPA : single page application 
+ ex : instagram , facebook 
+ - when u page reload it doesnt reload but only content changes.
+
+ **********************************
+
+ VIRTUAL DOM :
+  React creates a copy of Real DOM then its called Virtual DOM.
+  it do:
+  -when data changes React updates virtual DOM 
+  -updates only changed part in Real DOM 
+
+Result : High Performance .
+ ****************************************
+
+tool installation : node , npm 
+editor : vscode 
+
+******************
+old :npx new react app name
+new : npm create vite@latest name
+
+to run : npm run dev
+
+
+********************
+IMP File s:
+
+index.html : entry html file
+main.jsx : entry file for react app
+app.jsx : root file 
+components : reusable UI parts.
+
+***************************
+
+jsx : Javascript + html
+
+it gives or allows code to write of html in javascript code 
+
+const elemnt = <h1> Welcome to react App </h1>
+
+RULES :
+- must return single parent
+- use scope brackets for javascript 
+
+**********************
+
+COMPONENTS : 
+- heart of React.
+
+2 types :
+Functional component :
+ex : student.jsx
+
+function can only return once ..
+
+
+class component : 
+
+*******************************
+
+PROPS :
+ properties
+ :
+ data passing from parent to Child 
+ parent : app.jsx
+ 

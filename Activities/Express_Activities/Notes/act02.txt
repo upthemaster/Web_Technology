@@ -1,0 +1,72 @@
+Title: Middleware in Express
+
+1. Middleware:
+Middleware is a function that executes between request and response cycle.
+
+Flow:
+Client Request → Middleware → Route Handler → Response
+
+2. Why we use Middleware:
+- To process request before sending response
+- To check authentication
+- To validate data
+- To log request details
+- To handle errors
+- To parse JSON data
+
+3. Syntax:
+app.use(middlewareFunction)
+
+Example:
+app.use(express.json())
+
+4. next():
+next() is used to pass control to the next middleware or route.
+
+5. Types of Middleware:
+
+a. Application-level Middleware:
+Applied to entire application using app.use().
+
+b. Router-level Middleware:
+Applied to specific routes using express.Router().
+
+c. Built-in Middleware:
+Provided by Express.
+Example:
+express.json()
+express.static()
+
+d. Third-party Middleware:
+Installed using npm.
+Example:
+cors, morgan
+
+e. Error-handling Middleware:
+Used to handle errors in application.
+
+6. Benefits of Middleware:
+- Code reusability
+- Better security
+- Cleaner code structure
+- Centralized error handling
+- Easy request logging
+- Useful for authentication and validation
+
+7. Company-level Use:
+Middleware is used in companies for:
+- User login authentication
+- Admin authorization
+- API request logging
+- Error handling
+- Input validation
+- File upload handling
+- Security checks
+- CORS handling
+
+8. Real-life Example:
+In a college website:
+- Student sends login request
+- Middleware checks username/password
+- If valid, student can access dashboard
+- If invalid, request is blocked

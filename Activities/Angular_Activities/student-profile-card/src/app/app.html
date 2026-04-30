@@ -1,0 +1,15 @@
+<div class="container">
+  <h1>Activity 1: Student Profile Card</h1>
+  <div class="card">
+    <!-- Property Binding for src -->
+    <img [src]="student.imageUrl" alt="Profile Image" class="profile-img">
+    
+    <!-- Interpolation for text -->
+    <div class="info">
+      <h2>{{ student.name }}</h2>
+      <p class="course">{{ student.course }}</p>
+    </div>
+
+    <button (click)="changeImage()" class="btn">Change Image Dynamically</button>
+  </div>
+</div>

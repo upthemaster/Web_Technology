@@ -1,0 +1,79 @@
+package.json        - its an configuration file , info about our project 
+package.lock.json   - its also an configuration file with more detailed info about the project
+angular.json        - project configuration file
+style.css           - glbally css is given here.
+.gitihnore          - its an version control file. 
+.editorconfig       - here all editor configurations are stored in this file.
+index.html          - main html file that loads angular
+main.ts             - its an entry file
+appconfig           - its an configuration to app file.
+
+* App Folder - its an Root folder.
+***************************************************
+
+2 types of datatypes :
+    primitive & Non-primitive:
+
+                String
+                Number
+                Boolean 
+                undefined
+                symbol
+                null
+
+********************
+COMPONENTS : its an UI blocks of structure when we create an components ,  component creates 4 files   
+- html                                                                                                 
+- css
+- specs.ts
+**************
+-> to generate componet CMD: ng g c {component_name}
+
+*************
+Data bInding : 2types :
+            1> one way : Interpolation : {{value}}
+                         Property      : [Property] = "value"
+                         Event         : (event) = "fun()"
+
+            2> 2 way : [(ngMode)] = "variable"
+
+            "it connects UI to code "
+
+
+angular - framework
+react   - libraries
+
+**************
+angular its an typescript framework developed by google.
+interpolation 
+event bInding
+ng model
+
+**************
+directives means think of directives like magic Wanvs that can change ur webpage without rewriting it 
+    1) Structural : change structure of our page like add , remove and repeated things :-> ngif , ngfor , ngswitch
+    2) attribute : change look or style of webpage : -> ngstyle
+
+************************************
+
+ACTIVITY 1: Deep study about directive , structural with examples of each ..
+
+***************************************
+
+MODULES :
+    before Angular 15 needed modules,
+    nowadays we are using angular 21 , so now modules are optional  so no we can use 
+    STANDALONE Components .
+
+**********************************************
+
+SERVICES :
+    a services is like a  helper class , it is used to  store data and share logic that many components can be  are used.
+    instead of writing same code in every component , we write it once in services.
+
+:-> ng g s [service_name]
+:-> ng generate service [service_name]
+
+STEPS : 
+    1> create service 
+    2> create 

@@ -1,0 +1,43 @@
+Title: Hooks in React
+
+1. Hooks:
+Hooks are functions that allow us to use state and lifecycle features in functional components.
+
+2. Why Hooks:
+- Avoid class components
+- Make code simpler
+- Reuse logic
+
+3. useState:
+Used to manage state in functional components.
+
+Syntax:
+const [state, setState] = useState(initialValue);
+
+4. useEffect:
+Used to perform side effects in components.
+
+Examples:
+- API calls
+- Logging
+- DOM updates
+
+Syntax:
+useEffect(() => {
+  // code
+}, [dependencies]);
+
+5. Dependency Array:
+- [] → runs once
+- [count] → runs when count changes
+
+6. Real-life Example:
+- Fetching data from server
+- Updating UI after action
+
+7. Key Points:
+- Hooks only used in functional components
+- Must be used at top level
+
+8. Advantage:
+Cleaner and easier code compared to class components

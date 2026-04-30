@@ -1,0 +1,28 @@
+Title: Props in React
+
+1. Props:
+Props (properties) are used to pass data from parent component to child component.
+
+2. Key Points:
+- Props are read-only
+- Props cannot be modified inside child component
+- Used to make components reusable
+
+3. Syntax:
+<ChildComponent name="value" />
+
+4. Accessing Props:
+props.name
+
+5. Example:
+<Student name="Pranali" />
+
+6. Why Props are used:
+- To send data between components
+- To reuse components with different data
+
+7. Real-life Example:
+Same student component used for multiple students with different data
+
+8. Flow:
+Parent Component → Props → Child Component

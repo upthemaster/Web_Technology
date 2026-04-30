@@ -1,0 +1,59 @@
+Title: Template Engine in Express
+
+1. Template Engine:
+A template engine is used to generate dynamic HTML pages.
+
+2. EJS:
+EJS stands for Embedded JavaScript.
+It allows us to write JavaScript inside HTML.
+
+3. Why EJS is used:
+- To display dynamic data
+- To reuse HTML structure
+- To connect backend data with frontend pages
+
+4. EJS Syntax:
+<%= variable %>
+This is used to print dynamic data.
+
+5. Static Files:
+Static files are files that do not change dynamically.
+Examples:
+- CSS files
+- Images
+- JavaScript frontend files
+
+6. express.static():
+express.static() is middleware used to serve static files.
+
+Example:
+app.use(express.static("public"));
+
+7. Express Router:
+Express Router is used to separate routes into different files.
+
+Benefits:
+- Cleaner code
+- Better organization
+- Easy maintenance
+
+8. Complete Express Workflow:
+Client sends request
+↓
+Express server receives request
+↓
+Middleware executes
+↓
+Router checks matching route
+↓
+Controller/route logic runs
+↓
+EJS renders HTML page
+↓
+Response is sent to client
+
+9. Real-life Example:
+In a college website:
+- Student details are stored in backend
+- Express fetches the data
+- EJS displays it on webpage
